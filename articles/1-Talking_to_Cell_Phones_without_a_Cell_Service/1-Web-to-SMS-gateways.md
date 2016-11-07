@@ -144,7 +144,7 @@ choose to use an account to recieve incoming messages.
   messaging system available to regular phone users.
   * Lack of iMessage Integration: Same as above, except the iMessage protocol is
   also more-or-less impossible for non-iDevices to talk to until Apple lets
-  others talk to their devices. Install [Signal](https://itunes.apple.com/us/app/signal-private-messenger/)
+  others talk to their devices. Install [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8)
   iUsers, the rest of the world will thank you.
   * Single Point of Failure: Much like traditional cell phone companies, and in
   some ways, worse, the Web-to-SMS gateway becomes a centralized point of
