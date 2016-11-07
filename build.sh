@@ -1,5 +1,5 @@
 #! /bin/bash
-ARTICLES_LISTINGS=$(find ./articles/ -name "*.md" 2> /dev/null)
+ARTICLES_LISTINGS=$(find ./articles/ -name "*.md" 2> /dev/null | sort)
 
 cat "meta/main.html" > toc.html
 markdown toc/1-toc-header.md >> toc.html
@@ -16,7 +16,7 @@ for ARTICLE in $ARTICLES_LISTINGS; do
 	CLEANED_ARTICLE=$(echo $ARTICLE | tr -d "123456789" | sed 's|./toc/||' | sed 's|./articles/||' | sed 's|.md||' | tr "_" " " | tr "-" " ")
 	ARTICLE_CATEGORY=$( cut -d '/' -f 1 <<< "$CLEANED_ARTICLE" )
 	ARTICLE_TITLE=$( cut -d '/' -f 2- <<< "$CLEANED_ARTICLE" )
-	if [ ! $(echo toc.html | grep "$ARTICLE_CATEGORY") ]; then
+	if ! grep "$ARTICLE_CATEGORY" toc.html ; then
 		echo "$ARTICLE_CATEGORY" >> toc.html
 	fi
 	DIV_ID=$(echo "$ARTICLE_TITLE" | tr -d " ")
