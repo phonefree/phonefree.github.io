@@ -152,4 +152,3 @@ choose to use an account to recieve incoming messages.
   connecting by anything else, something you're dependent on for messaging
   also fails. Centralized organizations all share this weakness and cannot be
   considered trusted.
-  * Require too much information: It's 
