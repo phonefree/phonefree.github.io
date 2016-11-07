@@ -10,6 +10,27 @@
     </head>
 
     <body>
+<div id=SendSMSwithCurlOneLiner>
+<h1>Send SMS with a Curl One-Liner</h1>
+
+<p>Sending a text through a Web-to-SMS gateway is fine, but like, 99% of the time,
+a web-based GUI is overkill. That goes for way more than just text messages too.
+I certainly don't bother with web-based e-mail clients if I don't have to. So
+instead of dealing with the WWW's nonsense, for outgoing text messages you can
+use this simple Curl one-liner to talk to a Web-to-SMS gateway known as
+TextBelt.</p>
+
+<pre><code>    curl http://textbelt.com/text -d "number=$NUMBER" -d "message=$SHORTMESSAGE"
+</code></pre>
+
+<p>Or, for quick access, you can add it to your .bash_aliases file!</p>
+
+<pre><code>    send_text(){
+        \curl http://textbelt.com/text -d "number=$1" -d "message=$2"
+    }
+    alias sms=send_text
+</code></pre>
+</div>
 <div id=WebtoSMSgateways>
 <h1>Web-to-SMS Gateways</h1>
 
@@ -180,7 +201,8 @@ iUsers, the rest of the world will thank you.</li>
 some ways, worse, the Web-to-SMS gateway becomes a centralized point of
 failure, in that if it fails, bans your account, or you are kept from
 connecting by anything else, something you're dependent on for messaging
-also fails. Centralized organizations all share this weakness and cannot be
-considered trusted.</li>
+also fails. Centralized organizations all share this weakness and can't really
+be expected to be reliable, whether thay are phone companies or traditional
+web services.</li>
 </ul>
 </div>
