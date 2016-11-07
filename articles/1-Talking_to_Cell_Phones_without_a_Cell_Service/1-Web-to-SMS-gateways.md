@@ -150,5 +150,6 @@ choose to use an account to recieve incoming messages.
   some ways, worse, the Web-to-SMS gateway becomes a centralized point of
   failure, in that if it fails, bans your account, or you are kept from
   connecting by anything else, something you're dependent on for messaging
-  also fails. Centralized organizations all share this weakness and cannot be
-  considered trusted.
+  also fails. Centralized organizations all share this weakness and can't really
+  be expected to be reliable, whether thay are phone companies or traditional
+  web services.
