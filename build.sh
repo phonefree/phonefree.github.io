@@ -1,10 +1,16 @@
 #! /bin/bash
 ARTICLES_LISTINGS=$(find ./articles/ -name "*.md" 2> /dev/null)
 
-markdown toc/1-toc-header.md > toc.html
-rm posts.html
+cat "meta/main.html" > toc.html
+markdown toc/1-toc-header.md >> toc.html
 
-markdown index.md > index.html
+cat "meta/articles.html" > posts.html
+
+cat "meta/main.html" > index.html
+markdown index.md >> index.html
+echo "    </body>
+</html>" >> index.html
+
 for ARTICLE in $ARTICLES_LISTINGS; do
 	CLEANED_ARTICLE_PATH=$(echo $ARTICLE | sed 's|./||')
 	CLEANED_ARTICLE=$(echo $ARTICLE | tr -d "123456789" | sed 's|./toc/||' | sed 's|./articles/||' | sed 's|.md||' | tr "_" " " | tr "-" " ")
