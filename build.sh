@@ -14,7 +14,7 @@ for ARTICLE in $ARTICLES_LISTINGS; do
 	CLEANED_ARTICLE=$(echo $ARTICLE | tr -d "123456789" | sed 's|./toc/||' | sed 's|./articles/||' | sed 's|.md||' | tr "_" " " | tr "-" " ")
 	ARTICLE_CATEGORY=$(cut -d '/' -f 1 <<< "$CLEANED_ARTICLE")
 	ARTICLE_CATEGORY_NOSPACES=$(echo $ARTICLE_CATEGORY | tr -d " ")
-	ARTICLE_TITLE=$( cut -d '/' -f 2- <<< "$CLEANED_ARTICLE" )
+	ARTICLE_TITLE=$(cut -d '/' -f 2- <<< "$CLEANED_ARTICLE")
 	cat "meta/articles.html" >> articles/$ARTICLE_CATEGORY_NOSPACES.html
 	ls articles/$ARTICLE_CATEGORY_NOSPACES.html
 	if ! grep "$ARTICLE_CATEGORY" toc.html ; then
