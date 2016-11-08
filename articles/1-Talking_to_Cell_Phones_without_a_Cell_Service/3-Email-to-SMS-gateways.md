@@ -76,3 +76,8 @@ your email client and it will head on it's way through the gateway. When your
 contact recieves the email, he or she will be able to send you a message at your
 email address, and you'll be able to carry on a normal conversation with an SMS
 user using only a normal email account.
+
+BONUS! Turns out, it's possible to use OpenKeyChain to encrypt and decrypt SMS
+messages, which means that with this method, you can do GPG encrypted messages
+between your email client and your SMS contact. See this [Reddit Thread](https://www.reddit.com/r/privacy/comments/3wtdiu/gpg_encrypted_smsmms/)
+for now, tutorial forthcoming.
