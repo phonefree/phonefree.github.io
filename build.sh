@@ -18,7 +18,7 @@ for ARTICLE in $ARTICLES_LISTINGS; do
 	cat "meta/articles.html" >> articles/$ARTICLE_CATEGORY_NOSPACES.html
 	ls articles/$ARTICLE_CATEGORY_NOSPACES.html
 	if ! grep "$ARTICLE_CATEGORY" toc.html ; then
-		echo "$ARTICLE_CATEGORY" >> toc.html
+		echo "###$ARTICLE_CATEGORY" | markdown >> toc.html
 	fi
 	DIV_ID=$(echo "$ARTICLE_TITLE" | tr -d " ")
 	echo "  * [$ARTICLE_TITLE](/articles/$ARTICLE_CATEGORY_NOSPACES.html#$DIV_ID) " | markdown >> toc.html
