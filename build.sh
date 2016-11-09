@@ -17,7 +17,7 @@ for ARTICLE in $ARTICLES_LISTINGS; do
 	ARTICLE_TITLE=$(cut -d '/' -f 2- <<< "$CLEANED_ARTICLE")
 	cat "meta/articles.html" >> articles/$ARTICLE_CATEGORY_NOSPACES.html
 	ls articles/$ARTICLE_CATEGORY_NOSPACES.html
-	if ! grep "$ARTICLE_CATEGORY" toc.html ; then
+	if ! grep "###$ARTICLE_CATEGORY" toc.html ; then
 		echo "###$ARTICLE_CATEGORY" | markdown >> toc.html
 	fi
 	DIV_ID=$(echo "$ARTICLE_TITLE" | tr -d " ")
