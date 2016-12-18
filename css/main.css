@@ -1,39 +1,47 @@
 body {
-    background-color: darkblue;
+    background-color: #004159;
     font-family: "Lucida Console", Monaco, monospace;
 }
 
 h1 {
-    background-color: blue;
+    background-color: #65A8C4;
     text-align: center;
 }
 h2 {
-    background-color: blue;
+    background-color: #65A8C4;
     text-align: center;
 }
 h3 {
-    background-color: blue;
+    background-color: #65A8C4;
     text-align: center;
 }
 h4 {
-    background-color: blue;
+    background-color: #65A8C4;
     text-align: center;
 }
 h5 {
-    background-color: blue;
+    background-color: #65A8C4;
     text-align: center;
 }
 h6 {
-    background-color: blue;
+    background-color: #65A8C4;
     text-align: center;
 }
 
 div {
-    background-color: lightblue;
+    background-color: #AACEE2;
     text-indent: 50px;
 }
 
 p {
-    background-color: lightblue;
+    background-color: #AACEE2;
     text-indent: 50px;
+}
+
+a {
+    background-color: #00C590;
+}
+
+a:visited {
+    background-color: #8C65D3;
 }
