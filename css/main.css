@@ -1,8 +1,18 @@
 body {
     background-color: lightblue;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h4 {
     text-align: center;
 }
 
