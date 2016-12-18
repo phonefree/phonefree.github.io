@@ -10,6 +10,8 @@ To Build
 --------
 
 From a shell prompt(sh style) just run build.sh from the base directory.
+Requires a minimal Bash-like shell, so if you're on Windows below 10 you'll
+probably be OK with cygwin.
 
 To Contribute
 -------------
