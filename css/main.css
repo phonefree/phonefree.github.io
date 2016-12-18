@@ -49,6 +49,7 @@ a:visited {
 
 code {
     font-size: small;
+    text-indent: 0px;
     color: #73EBAE;
     background-color: #004159;
     text-align: justify;
