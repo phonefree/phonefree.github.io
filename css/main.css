@@ -1,21 +1,39 @@
 body {
-    background-color: lightblue;
+    background-color: darkblue;
     font-family: "Lucida Console", Monaco, monospace;
 }
 
 h1 {
+    background-color: blue;
     text-align: center;
 }
 h2 {
+    background-color: blue;
     text-align: center;
 }
 h3 {
+    background-color: blue;
     text-align: center;
 }
 h4 {
+    background-color: blue;
+    text-align: center;
+}
+h5 {
+    background-color: blue;
+    text-align: center;
+}
+h6 {
+    background-color: blue;
     text-align: center;
 }
 
+div {
+    background-color: lightblue;
+    text-indent: 50px;
+}
+
 p {
-    font-family: verdana;
+    background-color: lightblue;
+    text-indent: 50px;
 }
