@@ -45,3 +45,8 @@ a {
 a:visited {
     color: #8C65D3;
 }
+
+code {
+    font-size: small;
+    color: #73EBAE;
+}
