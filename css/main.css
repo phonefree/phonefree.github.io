@@ -39,9 +39,9 @@ p {
 }
 
 a {
-    background-color: #00C590;
+    color: #00C590;
 }
 
 a:visited {
-    background-color: #8C65D3;
+    color: #8C65D3;
 }
