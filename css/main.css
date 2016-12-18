@@ -1,6 +1,7 @@
 body {
     background-color: #004159;
     font-family: "Lucida Console", Monaco, monospace;
+    color: #004159;
 }
 
 h1 {
@@ -49,4 +50,5 @@ a:visited {
 code {
     font-size: small;
     color: #73EBAE;
+    background-color: #004159;
 }
