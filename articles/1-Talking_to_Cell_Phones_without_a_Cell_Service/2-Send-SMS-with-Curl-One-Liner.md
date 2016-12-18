@@ -13,6 +13,6 @@ TextBelt.
 Or, for quick access, you can add it to your .bash_aliases file!
 
         send_text(){
-            \curl http://textbelt.com/text -d "number=$1" -d "message=$2"
+          \curl http://textbelt.com/text -d "number=$1" -d "message=$2"
         }
         alias sms=send_text
