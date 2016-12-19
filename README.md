@@ -20,7 +20,8 @@ Contributions and updates are all git-driven.
 
 ###An Article:
 
-Fork the repository, write an article in markdown, and push your changes.
+Fork the repository, write an article in markdown, and push your changes. Then
+send me a pull request.
 
 ###A Correction:
 
